@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -6,7 +7,15 @@ import api from '../../services/api';
 import Container from '../../components/Container';
 import { Loading, Owner, IssueList, IssueFilter, PageActions } from './styles';
 
-class Repository extends Component {
+export default class Repository extends Component {
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        repository: PropTypes.string,
+      }),
+    }).isRequired,
+  };
+
   state = {
     repository: {},
     issues: [],
@@ -30,7 +39,7 @@ class Repository extends Component {
       api.get(`/repos/${repoName}`),
       api.get(`/repos/${repoName}/issues`, {
         params: {
-          state: filters.find((f) => f.active).state,
+          state: filters.find(f => f.active).state,
           per_page: 5,
         },
       }),
@@ -60,12 +69,12 @@ class Repository extends Component {
     this.setState({ issues: response.data });
   };
 
-  handleFilterClick = async (filterIndex) => {
+  handleFilterClick = async filterIndex => {
     await this.setState({ filterIndex });
     this.loadIssues();
   };
 
-  handlePage = async (action) => {
+  handlePage = async action => {
     const { page } = this.state;
     await this.setState({
       page: action === 'back' ? page - 1 : page + 1,
@@ -108,13 +117,13 @@ class Repository extends Component {
               </button>
             ))}
           </IssueFilter>
-          {issues.map((issue) => (
+          {issues.map(issue => (
             <li key={String(issue.id)}>
               <img src={issue.user.avatar_url} alt={issue.user.login} />
               <div>
                 <strong>
                   <a href={issue.html_url}>{issue.title}</a>
-                  {issue.labels.map((label) => (
+                  {issue.labels.map(label => (
                     <span key={String(label.id)}>{label.name}</span>
                   ))}
                 </strong>
@@ -140,13 +149,3 @@ class Repository extends Component {
     );
   }
 }
-
-Repository.propTypes = {
-  match: PropTypes.shape({
-    params: PropTypes.shape({
-      repository: PropTypes.string,
-    }),
-  }).isRequired,
-};
-
-export default Repository;

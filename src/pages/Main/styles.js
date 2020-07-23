@@ -7,23 +7,24 @@ export const Form = styled.form`
 
   input {
     flex: 1;
-    border: 1px solid ${(props) => (props.failed ? '#ff6b6b' : '#eee')};
+    border: 1px solid ${props => (props.error ? '#ff6b6b' : '#eee')};
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+    transition: border 0.25s ease-out;
   }
 `;
 
 const rotate = keyframes`
-  from{
-      transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 `;
 
-export const SubmitButton = styled.button.attrs((props) => ({
+export const SubmitButton = styled.button.attrs(props => ({
   type: 'submit',
   disabled: props.loading,
 }))`
@@ -32,7 +33,6 @@ export const SubmitButton = styled.button.attrs((props) => ({
   padding: 0 15px;
   margin-left: 10px;
   border-radius: 4px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@ export const SubmitButton = styled.button.attrs((props) => ({
     opacity: 0.6;
   }
 
-  ${(props) =>
+  ${props =>
     props.loading &&
     css`
       svg {
@@ -53,7 +53,7 @@ export const SubmitButton = styled.button.attrs((props) => ({
 
 export const List = styled.ul`
   list-style: none;
-  margin-top: 38px;
+  margin-top: 30px;
 
   li {
     padding: 15px 0;
