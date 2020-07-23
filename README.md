@@ -15,12 +15,11 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades-checkered_flag)
 
+:small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação-dash)
+
 :small_blue_diamond: [Tecnologias utilizadas](#tecnologias-utilizadas)
 
 :small_blue_diamond: [Executando a aplicação](#executando-a-aplicação-arrow_forward)
-
-:small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação-dash)
-
 
 ## Descrição do Projeto :star:
 <p align="justify"> O objetivo do projeto é iniciar no ReactJS e, concomitantemente, nas realizações de requições Ajax com o Axios. Neste projeto, Requisitamos a api do GitHub afim de buscar 
