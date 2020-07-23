@@ -19,6 +19,9 @@
 
 :small_blue_diamond: [Executando a aplicação](#executando-a-aplicação-arrow_forward)
 
+:small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação-dash)
+
+
 ## Descrição do Projeto :star:
 <p align="justify"> O objetivo do projeto é iniciar no ReactJS e, concomitantemente, nas realizações de requições Ajax com o Axios. Neste projeto, Requisitamos a api do GitHub afim de buscar 
 um determinado repositório e renderizar as issues do mesmo por filtros.</p>
@@ -27,6 +30,18 @@ um determinado repositório e renderizar as issues do mesmo por filtros.</p>
 ## Funcionalidades :checkered_flag:
 - [X] Buscar um repositório no GitHub
 - [X] Mostrar os detalhes do repositório e das suas issues por filtros
+
+
+## Layout da Aplicação :dash:
+
+<p align="center"><strong>Page Home</strong></p>
+
+<img src="https://github.com/JoaoVictorfss/bootcamp-gostack-09-desafio-05/blob/master/public/Home.png">
+
+<p align="center"><strong>Page Repository</strong></p>
+
+<img src="https://github.com/JoaoVictorfss/bootcamp-gostack-09-desafio-05/blob/master/public/Home.png"><br>
+
 
 
 ## Tecnologias utilizadas
