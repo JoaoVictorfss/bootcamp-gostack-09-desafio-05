@@ -17,7 +17,7 @@
 
 :small_blue_diamond: [Tecnologias utilizadas](#tecnologias-utilizadas)
 
-:small_blue_diamond: [Executando a aplicação](#executando-a-aplicaç-arrow_forward)
+:small_blue_diamond: [Executando a aplicação](#executando-a-aplicação-arrow_forward)
 
 ## Descrição do Projeto :star:
 <p align="justify"> O objetivo do projeto é iniciar no ReactJs e, concomitantemente, nas realizações de requições Ajax com o Axios. Neste projeto, Requisitamos a api do GitHub afim de buscar 
