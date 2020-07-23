@@ -48,3 +48,7 @@ um determinado repositório e renderizar as issues do mesmo por filtros.</p>
   ##### Execute a aplicação:
    > yarn start
   
+  ## Licença 
+  The [MIT License]() (MIT)
+
+  Copyright :copyright: 2020 - bootcamp-gostack-09-desafio-05
