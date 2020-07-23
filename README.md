@@ -40,7 +40,7 @@ um determinado repositório e renderizar as issues do mesmo por filtros.</p>
 
 <p align="center"><strong>Page Repository</strong></p>
 
-<img src="https://github.com/JoaoVictorfss/bootcamp-gostack-09-desafio-05/blob/master/public/Home.png"><br>
+<img src="https://github.com/JoaoVictorfss/bootcamp-gostack-09-desafio-05/blob/master/public/Repository.png"><br>
 
 
 
